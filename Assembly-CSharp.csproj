@@ -46,14 +46,14 @@
      <Compile Include="Assets\Game\Palettes.cs" />
      <Compile Include="Assets\Game\Player\Scripts\PlayerGrounded.cs" />
      <Compile Include="Assets\Game\Player\Scripts\PlayerTunneling.cs" />
+     <Compile Include="Assets\Game\Player\Scripts\PlayerSkin.cs" />
      <Compile Include="Assets\Game\Player\Scripts\PlayerAirborne.cs" />
      <Compile Include="Assets\Game\StageManager.cs" />
      <Compile Include="Assets\Game\Menu\SceneLoader.cs" />
+     <Compile Include="Assets\Game\Audio\AudioProfile.cs" />
      <Compile Include="Assets\Game\Player\Scripts\PlayerCore.cs" />
      <Compile Include="Assets\Game\Menu\MenuManager.cs" />
-     <Compile Include="Assets\Game\Player\Scripts\PlayerSkin.cs" />
      <Compile Include="Assets\Game\Audio\AudioManager.cs" />
-     <Compile Include="Assets\Game\Audio\AudioProfile.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
