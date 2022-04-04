@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8408d29fe257c546a7b49439cff216d, type: 3}
+  m_Name: AudioProfile
+  m_EditorClassIdentifier: 
+  library:
+  - name: Crack
+    clip:
+      clips:
+      - {fileID: 8300000, guid: d60d1babbefd4834597f39b84a4d20b4, type: 3}
+      - {fileID: 8300000, guid: 6faaa2fc83deb2443aa7fe7acd01bcf0, type: 3}
+      volume: 1
+  - name: Woosh
+    clip:
+      clips:
+      - {fileID: 8300000, guid: d4c6da21ad5b9ef42b39a73dd1a89f9b, type: 3}
+      - {fileID: 8300000, guid: 0ae7d432dabc3d74583c3226f2024e0f, type: 3}
+      - {fileID: 8300000, guid: 5fa79ce5e60f7d94e8c3368c507a0990, type: 3}
+      volume: 0.4
+  - name: Die
+    clip:
+      clips:
+      - {fileID: 8300000, guid: 112c20e533d1f9e4e8bbd24b76d72099, type: 3}
+      volume: 0.4
+  - name: Collect
+    clip:
+      clips:
+      - {fileID: 8300000, guid: de0979db04ef3aa42aab8bb3c4dbcb60, type: 3}
+      volume: 0.12
+  - name: Dash
+    clip:
+      clips:
+      - {fileID: 8300000, guid: 758f98ac8503ba64fbd5749a491832b0, type: 3}
+      volume: 0.6
+  - name: Emerge
+    clip:
+      clips:
+      - {fileID: 8300000, guid: e860ece827e2fbe4a98c14a529ee8e00, type: 3}
+      volume: 0.2
+  - name: Submerge
+    clip:
+      clips:
+      - {fileID: 8300000, guid: a9081f291ff0ce44c8f1cdaa54299915, type: 3}
+      volume: 0.8
+  - name: Jump
+    clip:
+      clips:
+      - {fileID: 8300000, guid: 8f5f269a538c4fc4390597dc43a2a3e5, type: 3}
+      volume: 0.6
+  - name: HighImpact
+    clip:
+      clips:
+      - {fileID: 8300000, guid: 0e9535ed91d40044fac5fdbfb3c24e2c, type: 3}
+      volume: 0.9
+  - name: MediumImpact
+    clip:
+      clips:
+      - {fileID: 8300000, guid: 8978dee65b1394a47b064029351a6f49, type: 3}
+      volume: 0.8
+  - name: SmallImpact
+    clip:
+      clips:
+      - {fileID: 8300000, guid: fc17443ef995e4c428cbf449dbf66149, type: 3}
+      volume: 0.75
+  - name: SideHit
+    clip:
+      clips:
+      - {fileID: 8300000, guid: 21d86c1557fde0b4d956c3327787c247, type: 3}
+      volume: 0.25
+  - name: Button
+    clip:
+      clips:
+      - {fileID: 8300000, guid: e6bf90b617e56ec468e37b6245f2949a, type: 3}
+      volume: 1
