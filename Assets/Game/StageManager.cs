@@ -22,6 +22,8 @@ public class StageManager : MonoBehaviour
     public float offsetDecel;
     public float offset;
     public Transform roof;
+
+    public AudioSource music;
     
     // Floor
     [Header("Floor")] public Transform floor;
@@ -42,6 +44,8 @@ public class StageManager : MonoBehaviour
         playerCore.CancelInvoke("UpdateScore");
         scoreCanvasAnimator.Play("Idle", 0, 0f);
         scoreCanvasAnimator.SetBool("GameOver", true);
+        music.Stop();
+        music.gameObject.SetActive(false);
 
         bool highScore = false;
         if (PlayerPrefs.HasKey("HighScore"))

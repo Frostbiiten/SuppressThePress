@@ -11582,6 +11582,7 @@ MonoBehaviour:
   offsetDecel: 4
   offset: 0
   roof: {fileID: 1368899216}
+  music: {fileID: 0}
   floor: {fileID: 1845363648}
   scoreCanvasAnimator: {fileID: 1840100776}
   scoreLabel: {fileID: 569891462}
