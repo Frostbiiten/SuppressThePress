@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource[] audioSources = new AudioSource[10];
     public AudioProfile profile;
     int currentSourceIndex;
+    public AudioSource music;
     
     public Dictionary<String, AudioProfile.Clip> library = new Dictionary<string, AudioProfile.Clip>();
 
@@ -18,12 +19,18 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         profile.Move(library);
 
+        
         for (int i = 0; i < audioSources.Length; ++i)
         {
             GameObject go = new GameObject();
             go.transform.parent = transform;
             audioSources[i] = go.AddComponent<AudioSource>();
         }
+    }
+
+    public void Start()
+    {
+        if (!music.isPlaying) music.Play();
     }
 
     public AudioSource PlaySound(String clipName)

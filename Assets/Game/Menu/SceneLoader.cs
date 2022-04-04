@@ -25,6 +25,8 @@ public class SceneLoader : MonoBehaviour
     {
         if (loadingAnimation) loadingAnimation.Play("Finish");
         loading = false;
+        
+        if (scene.name == "Menu") AudioManager.instance.music.Play();
     }
     
     public void LoadScene(String name)

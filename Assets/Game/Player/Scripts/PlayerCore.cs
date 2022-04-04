@@ -249,8 +249,6 @@ public class PlayerCore : MonoBehaviour
         indicatorFillbar.fillAmount = 1f - (stageManager.roofHeight / stageManager.maxRoofHeight);
         powerFillBar.fillAmount = Mathf.Lerp(powerFillBar.fillAmount, (float) power / maxPower, Time.deltaTime * 5f);
 
-
-        
         var screenPos = playerCam.cam.WorldToScreenPoint(new Vector3(-stageManager.stageWidth, 0f));
         depthIndicator.anchoredPosition = new Vector2
         (
