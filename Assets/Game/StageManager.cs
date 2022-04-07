@@ -32,8 +32,6 @@ public class StageManager : MonoBehaviour
     public void Start()
     {
         roof.position = new Vector3(0f, roofHeight);
-        
-        if (!AudioManager.instance.music.isPlaying) AudioManager.instance.music.Play();
     }
 
     public void GameOver()
@@ -44,7 +42,7 @@ public class StageManager : MonoBehaviour
         playerCore.CancelInvoke("UpdateScore");
         scoreCanvasAnimator.Play("Idle", 0, 0f);
         scoreCanvasAnimator.SetBool("GameOver", true);
-        AudioManager.instance.music.Stop();
+        Music.instance.music.Stop();
 
         bool highScore = false;
         if (PlayerPrefs.HasKey("HighScore"))

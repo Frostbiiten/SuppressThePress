@@ -42420,6 +42420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectiblePrefab: {fileID: 3017298803398717020, guid: 639cf7eb17eb0d04c8428474b13bf46b, type: 3}
+  player: {fileID: 1379497648}
   poolDefaultSize: 400
   poolMaxSize: 500
   minDepth: -5

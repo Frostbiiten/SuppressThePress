@@ -54,6 +54,7 @@
      <Compile Include="Assets\Game\Player\Scripts\PlayerCore.cs" />
      <Compile Include="Assets\Game\Menu\MenuManager.cs" />
      <Compile Include="Assets\Game\Audio\AudioManager.cs" />
+     <Compile Include="Assets\Game\Audio\Music.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

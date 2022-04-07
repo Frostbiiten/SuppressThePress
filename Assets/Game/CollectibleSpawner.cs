@@ -15,6 +15,7 @@ public class PoolReturner : MonoBehaviour
 public class CollectibleSpawner : MonoBehaviour
 {
     public GameObject collectiblePrefab;
+    public PlayerCore player;
 
     [Header("Pooling")]
     public int poolDefaultSize = 50;
@@ -64,14 +65,18 @@ public class CollectibleSpawner : MonoBehaviour
     // VFX
     public List<Transform> spawningCollectibles = new List<Transform>();
 
+    bool prespawned = false;
     public void Start()
     {
         for (int i = 0; i < startSpawnNumber; ++i) SpawnCollectible();
+        prespawned = true;
         InvokeRepeating(nameof(SpawnCollectible), 0f, spawnFrequency);
     }
     
     public void SpawnCollectible()
     {
+        if (prespawned && player.startTime < 0f) return;
+        
         float Distributed01 = 1f - Mathf.Pow(Random.Range(0f, 1f), distributionDegree);
         Vector2 position = new Vector2
         (

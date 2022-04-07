@@ -24,9 +24,8 @@ public class SceneLoader : MonoBehaviour
     void FinishLoading(Scene scene, LoadSceneMode mode)
     {
         if (loadingAnimation) loadingAnimation.Play("Finish");
+        if (Music.instance && !Music.instance.music.isPlaying) Music.instance.music.Play(); // Make sure music is playing when scene loads
         loading = false;
-        
-        if (scene.name == "Menu") AudioManager.instance.music.Play();
     }
     
     public void LoadScene(String name)
